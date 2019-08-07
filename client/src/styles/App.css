@@ -1,6 +1,86 @@
 @charset "UTF-8";
-h1 {
-  color: pink;
+.header_nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: transparent;
+  position: absolute;
+}
+
+.header_nav .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_nav .header #icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 18px;
+}
+
+.header_nav .header__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header_nav .header__logos--insta {
+  padding-right: 18px;
+}
+
+.header_nav .header__title img {
+  height: 48px;
+}
+
+.header_nav .header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header_nav .header__right--search {
+  padding-right: 18px;
+}
+
+.header_nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_nav .nav a {
+  padding: 20px;
+  margin: 0px;
+}
+
+.header_nav .nav :hover {
+  color: rgba(255, 251, 0, 0.158);
 }
 
 .categories__box--img img {
@@ -247,5 +327,21 @@ h1 {
   color: dimgrey;
   font-weight: 500;
   font-size: 15px;
+}
+
+.hero {
+  background-image: url("https://cdn.shopify.com/s/files/1/0081/5654/5088/files/dots_1440x.jpg?v=1543973418%22%20alt=%22Hand%20Fabricated%22%20class=%22responsive-wide-image%22");
+  height: 822px;
+  background-position: right 50% bottom 52%;
+}
+
+.header_hero .ReactStickyHeader_root {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.header_hero .ReactStickyHeader_root * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 /*# sourceMappingURL=App.css.map */

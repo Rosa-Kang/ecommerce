@@ -1,7 +1,14 @@
-h1 {
-  color: pink;
-}
-
+@import "./header";
 @import "./categories";
 @import "./collection";
 @import "./ourStore";
+@import "./hero";
+
+.header_hero {
+  .ReactStickyHeader_root {
+    box-sizing: inherit;
+  }
+  .ReactStickyHeader_root * {
+    box-sizing: inherit;
+  }
+}
