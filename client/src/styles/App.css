@@ -8,8 +8,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: transparent;
   position: absolute;
+  -webkit-animation: headerFade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation: headerFade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .header_nav .header {
@@ -60,7 +61,8 @@
   padding-right: 18px;
 }
 
-.header_nav .nav {
+.header_nav .nav__list {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,19 +70,83 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.header_nav .nav a {
+.header_nav .nav__list a {
+  text-decoration: none;
   padding: 20px;
   margin: 0px;
 }
 
-.header_nav .nav :hover {
-  color: rgba(255, 251, 0, 0.158);
+.header_nav .nav__list a :hover {
+  color: #b1945c;
+}
+
+.header_nav .nav__list--shop--dropDown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 130px;
+  font-weight: 100;
+  height: 252px;
+}
+
+.header_nav .nav__list--shop--dropDown--picture {
+  background-image: url(https://cdn.shopify.com/s/files/1/0081/5654/5088/files/emre-gencer-264429-unsplash_11f204d0-9350-472d-ac3c-d9cd74faa587_3000x.jpg?v=1543972655);
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 99.2%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+}
+
+.header_nav .nav__list--shop--dropDown--picture #text-top {
+  margin: 10px 0px;
+  color: white;
+}
+
+.header_nav .nav__list--shop--dropDown--picture #text-bottom {
+  font-size: 0.76em;
+  font-weight: 400;
+  margin: 10px 0px;
+  padding: 16px 16px;
+  color: white;
+  border: 1px solid white;
+}
+
+.header_nav .nav__list--shop--dropDown #menu {
+  border: 1px solid #f9f9f9;
+  color: #545454;
+  font-weight: 400;
+  padding: 0px 76px;
+}
+
+.header_nav .nav__list--shop:hover .nav__list--shop--dropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f9f9f9;
 }
 
 .categories__box--img img {
