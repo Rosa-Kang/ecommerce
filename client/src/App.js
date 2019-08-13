@@ -1,21 +1,22 @@
 import React from "react";
+import MainCtrl from "./containers/mainContainer";
+import Shop from "./components/Shop";
+import NewsCtrl from "./containers/newContainer";
+import ContactCtrl from "./containers/contactContainer";
 import "./styles/App.css";
-import Header from "./components/Header";
-import Collection from "../src/components/Collection";
-import Categories from "../src/components/Categories";
-import Hero from "../src/components/Hero";
-import OurStore from "./components/OurStore";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <div className="header_hero">
-        <Header />
-        <Hero />
-      </div>
-      <Categories />
-      <Collection />
-      <OurStore />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={MainCtrl} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/news" component={NewsCtrl} />
+          <Route path="/contact" component={ContactCtrl} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,93 +1,48 @@
 import React, { Component } from "react";
 import "react-sticky-header/styles.css";
 import StickyHeader from "react-sticky-header";
-import insta from "../assets/icons/insta.png";
 import instaScr from "../assets/icons/instaScr.png";
-import search from "../assets/icons/search.png";
 import searchScr from "../assets/icons/searchScr.png";
-import cart from "../assets/icons/cart.png";
 import cartScr from "../assets/icons/cartScr.png";
-import pinterest from "../assets/icons/pinterest.png";
 import pintScr from "../assets/icons/pintScr.png";
-import effortless from "../assets/icons/effortless.png";
 import effortScr from "../assets/icons/sc-effort.png";
 
-export default class Header extends Component {
-  state = {
-    backgroundColor: "transparent",
-    color: "#fff",
-    insta: insta,
-    search: search,
-    cart: cart,
-    pinterest: pinterest,
-    effortless: effortless
-  };
-
-  listenScrollEvent = e => {
-    if (window.scrollY > 80) {
-      this.setState({ backgroundColor: "#fff" });
-      this.setState({ color: "#545454" });
-      this.setState({ insta: instaScr });
-      this.setState({ search: searchScr });
-      this.setState({ cart: cartScr });
-      this.setState({ pinterest: pintScr });
-      this.setState({ effortless: effortScr });
-    } else {
-      this.setState({ backgroundColor: "transparent" });
-      this.setState({ color: "#fff" });
-      this.setState({ insta: insta });
-      this.setState({ search: search });
-      this.setState({ cart: cart });
-      this.setState({ pinterest: pinterest });
-      this.setState({ effortless: effortless });
-    }
-  };
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.listenScrollEvent);
-  }
+export default class HeaderVer2 extends Component {
   render() {
     return (
       <StickyHeader
         header={
-          <div
-            className="start"
-            style={{ backgroundColor: this.state.backgroundColor }}
-          >
+          <div className="start" style={{ backgroundColor: "#fff" }}>
             <div className="start__header">
               <div className="start__header__logos">
                 <div className="start__header__logos--insta">
-                  <img id="icon" src={this.state.insta} alt="instagram" />
+                  <img id="icon" src={instaScr} alt="instagram" />
                 </div>
                 <div className="start__header__logos--pinterest">
-                  <img id="icon" src={this.state.pinterest} alt="pinterest" />
+                  <img id="icon" src={pintScr} alt="pinterest" />
                 </div>
               </div>
               <a href="/" className="start__header__title">
-                <img src={this.state.effortless} alt="icon" />
+                <img src={effortScr} alt="icon" />
               </a>
               <div className="start__header__right">
                 <div className="start__header__right--search">
-                  <img id="icon" src={this.state.search} alt="search" />
+                  <img id="icon" src={searchScr} alt="search" />
                 </div>
                 <div className="start__header__right--cart">
-                  <img id="icon" src={this.state.cart} alt="cart" />
+                  <img id="icon" src={cartScr} alt="cart" />
                 </div>
               </div>
             </div>
             <div className="start__nav">
               <ul className="start__nav__list">
                 <li>
-                  <a href="/" style={{ color: this.state.color }}>
+                  <a href="/" style={{ color: "#545454" }}>
                     Home
                   </a>
                 </li>
                 <li className="start__nav__list--shop">
-                  <a
-                    href="shop"
-                    className="btn"
-                    style={{ color: this.state.color }}
-                  >
+                  <a href="shop" className="btn" style={{ color: "#545454" }}>
                     Shop
                   </a>
                   <div className="start__nav__list--shop--dropDown">
@@ -128,12 +83,12 @@ export default class Header extends Component {
                   </div>
                 </li>
                 <li>
-                  <a href="news" style={{ color: this.state.color }}>
+                  <a href="news" style={{ color: "#545454" }}>
                     News
                   </a>
                 </li>
                 <li>
-                  <a href="contact" style={{ color: this.state.color }}>
+                  <a href="contact" style={{ color: "#545454" }}>
                     Contact
                   </a>
                 </li>

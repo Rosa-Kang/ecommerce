@@ -3,8 +3,12 @@
 @import "./collection";
 @import "./ourStore";
 @import "./hero";
-
-.header_hero {
+@import "./shop";
+@import "./earings";
+@import "./news";
+@import "./conatct";
+.app {
+  color: #545454;
   .ReactStickyHeader_root {
     box-sizing: inherit;
   }

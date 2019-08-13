@@ -18,7 +18,7 @@ export default class Collection extends Component {
               className="collection__One--link--type"
             >
               <span>Winter Vibe</span>
-              <img src={play} />
+              <img alt="playkey" src={play} />
             </a>
           </div>
         </div>

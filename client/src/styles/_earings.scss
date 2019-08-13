@@ -1,0 +1,25 @@
+.common-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .earings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    img {
+      width: 99%;
+      height: 500px;
+    }
+
+    &__text {
+      padding: 20px 0px;
+      h5 {
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px 0px 10px 0px;
+      }
+    }
+  }
+}

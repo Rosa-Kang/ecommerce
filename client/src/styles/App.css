@@ -1,6 +1,5 @@
 @charset "UTF-8";
-.header_nav {
-  width: 100%;
+.start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,12 +7,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  -webkit-animation: headerFade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          animation: headerFade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.header_nav .header {
+.start__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,13 +19,13 @@
           justify-content: space-between;
 }
 
-.header_nav .header #icon {
+.start__header #icon {
   width: 20px;
   height: 20px;
   padding-top: 18px;
 }
 
-.header_nav .header__logos {
+.start__header__logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,15 +35,15 @@
           flex-direction: row;
 }
 
-.header_nav .header__logos--insta {
+.start__header__logos--insta {
   padding-right: 18px;
 }
 
-.header_nav .header__title img {
+.start__header__title img {
   height: 48px;
 }
 
-.header_nav .header__right {
+.start__header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,11 +53,11 @@
           flex-direction: row;
 }
 
-.header_nav .header__right--search {
+.start__header__right--search {
   padding-right: 18px;
 }
 
-.header_nav .nav__list {
+.start__nav__list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,17 +71,17 @@
           justify-content: center;
 }
 
-.header_nav .nav__list a {
+.start__nav__list a {
   text-decoration: none;
   padding: 20px;
   margin: 0px;
 }
 
-.header_nav .nav__list a :hover {
+.start__nav__list a:hover {
   color: #b1945c;
 }
 
-.header_nav .nav__list--shop--dropDown {
+.start__nav__list--shop--dropDown {
   display: none;
   position: absolute;
   width: 100%;
@@ -95,7 +91,7 @@
   height: 252px;
 }
 
-.header_nav .nav__list--shop--dropDown--picture {
+.start__nav__list--shop--dropDown--picture {
   background-image: url(https://cdn.shopify.com/s/files/1/0081/5654/5088/files/emre-gencer-264429-unsplash_11f204d0-9350-472d-ac3c-d9cd74faa587_3000x.jpg?v=1543972655);
   top: 0;
   left: 0;
@@ -117,12 +113,12 @@
   text-align: center;
 }
 
-.header_nav .nav__list--shop--dropDown--picture #text-top {
+.start__nav__list--shop--dropDown--picture #text-top {
   margin: 10px 0px;
   color: white;
 }
 
-.header_nav .nav__list--shop--dropDown--picture #text-bottom {
+.start__nav__list--shop--dropDown--picture #text-bottom {
   font-size: 0.76em;
   font-weight: 400;
   margin: 10px 0px;
@@ -131,14 +127,14 @@
   border: 1px solid white;
 }
 
-.header_nav .nav__list--shop--dropDown #menu {
+.start__nav__list--shop--dropDown #menu {
   border: 1px solid #f9f9f9;
   color: #545454;
   font-weight: 400;
   padding: 0px 76px;
 }
 
-.header_nav .nav__list--shop:hover .nav__list--shop--dropDown {
+.start__nav__list--shop:hover .nav__list--shop--dropDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,12 +397,227 @@
   background-position: right 50% bottom 52%;
 }
 
-.header_hero .ReactStickyHeader_root {
+.shop .ReactStickyHeader_root {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
-.header_hero .ReactStickyHeader_root * {
+.shop .ReactStickyHeader_root * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.shop #earing {
+  padding-top: 190px;
+}
+
+.shop__box {
+  font-family: "Century Gothic", sans-serif;
+}
+
+.shop__box--text {
+  color: #545454;
+  background-color: #f5eddc;
+  padding: 40px;
+  width: 100%;
+}
+
+.shop__box--text #view {
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #545454;
+  width: 35%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.shop__box--img img {
+  height: 44vw;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .shop__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shop__box #view {
+    width: 40%;
+  }
+  .shop__box--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .shop__box--img img {
+    height: 34vw;
+    width: 100%;
+  }
+}
+
+.common-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.common-box .earings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.common-box .earings img {
+  width: 99%;
+  height: 500px;
+}
+
+.common-box .earings__text {
+  padding: 20px 0px;
+}
+
+.common-box .earings__text h5 {
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.newsNav {
+  width: 100%;
+  padding-top: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsNav ul {
+  list-style-type: none;
+}
+
+.newsNav--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newsNav--list a {
+  color: #545454;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.news__one {
+  width: 31%;
+  margin: 10px;
+}
+
+.news__one img {
+  width: 100%;
+}
+
+.news__one--text {
+  padding: 10px;
+}
+
+.news__one--text--meta {
+  font-weight: 100;
+}
+
+.contact {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contact h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact input {
+  border: 1px solid #efeeec;
+  font-size: 0.95em;
+  border-radius: 0px;
+  max-width: 100%;
+  padding: 9px 16px;
+  margin: 7px 0;
+  background: rgba(255, 255, 255, 0);
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact textarea {
+  border: 1px solid #efeeec;
+  font-size: 0.95em;
+  border-radius: 0px;
+  max-width: 100%;
+  padding: 9px 16px;
+  margin: 7px 0;
+  background: rgba(255, 255, 255, 0);
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app {
+  color: #545454;
+}
+
+.app .ReactStickyHeader_root {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.app .ReactStickyHeader_root * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
