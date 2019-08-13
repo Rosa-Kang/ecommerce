@@ -6,8 +6,9 @@
 @import "./shop";
 @import "./earings";
 @import "./news";
-@import "./conatct";
+@import "./contact";
 .app {
+  font-family: "Century Gothic", sans-serif;
   color: #545454;
   .ReactStickyHeader_root {
     box-sizing: inherit;
