@@ -15,12 +15,18 @@ export default class HeaderVer2 extends Component {
           <div className="start" style={{ backgroundColor: "#fff" }}>
             <div className="start__header">
               <div className="start__header__logos">
-                <div className="start__header__logos--insta">
+                <a
+                  className="start__header__logos--insta"
+                  href="https://www.instagram.com/wolf_circus/"
+                >
                   <img id="icon" src={instaScr} alt="instagram" />
-                </div>
-                <div className="start__header__logos--pinterest">
+                </a>
+                <a
+                  className="start__header__logos--pinterest"
+                  href="https://www.pinterest.ca/wolfcircus/"
+                >
                   <img id="icon" src={pintScr} alt="pinterest" />
-                </div>
+                </a>
               </div>
               <a href="/" className="start__header__title">
                 <img src={effortScr} alt="icon" />

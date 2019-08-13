@@ -5,6 +5,7 @@ import Collection from "../components/Collection";
 import Categories from "../components/Categories";
 import Hero from "../components/Hero";
 import OurStore from "../components/OurStore";
+import Footer from "../components/Footer";
 
 export default class mainContainer extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class mainContainer extends Component {
         <Categories />
         <Collection />
         <OurStore />
+        <Footer />
       </>
     );
   }

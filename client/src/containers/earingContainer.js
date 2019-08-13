@@ -10,7 +10,7 @@ export default class earingContainer extends Component {
   componentDidMount() {
     console.log(data);
     const newCommonLists = data.filter(list => {
-      return list.category == "earing";
+      return list.category === "earing";
     });
     const sortedLists = newCommonLists.sort(
       (a, b) => parseFloat(b.promo) - parseFloat(a.promo)

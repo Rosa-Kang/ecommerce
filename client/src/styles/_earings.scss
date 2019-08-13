@@ -8,9 +8,16 @@
     text-align: center;
     width: 100%;
 
-    img {
-      width: 99%;
-      height: 500px;
+    &__thumb {
+      transition: background-color 4s ease-in-out 1s;
+      img {
+        width: 99%;
+        height: 500px;
+      }
+    }
+
+    &__thumb:hover {
+      background: #d2d4d6;
     }
 
     &__text {

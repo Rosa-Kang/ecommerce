@@ -10,7 +10,7 @@ export default class necklaceContainer extends Component {
   componentDidMount() {
     console.log(data);
     const newCommonLists = data.filter(list => {
-      return list.category == "necklace";
+      return list.category === "necklace";
     });
     const sortedLists = newCommonLists.sort(
       (a, b) => parseFloat(b.promo) - parseFloat(a.promo)

@@ -10,7 +10,7 @@ export default class ringContainer extends Component {
   componentDidMount() {
     console.log(data);
     const newCommonLists = data.filter(list => {
-      return list.category == "ring";
+      return list.category === "ring";
     });
     const sortedLists = newCommonLists.sort(
       (a, b) => parseFloat(b.promo) - parseFloat(a.promo)

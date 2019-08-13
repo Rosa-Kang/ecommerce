@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../components/HeaderVer2";
 import News from "../components/News";
 import data from "../model/newsList";
+import Footer from "../components/Footer";
 
 export default class newContainer extends Component {
   state = {
@@ -60,6 +61,7 @@ export default class newContainer extends Component {
             />
           ))}
         </div>
+        <Footer />
       </>
     );
   }

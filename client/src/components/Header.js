@@ -56,12 +56,18 @@ export default class Header extends Component {
           >
             <div className="start__header">
               <div className="start__header__logos">
-                <div className="start__header__logos--insta">
+                <a
+                  className="start__header__logos--insta"
+                  href="https://www.instagram.com/wolf_circus/"
+                >
                   <img id="icon" src={this.state.insta} alt="instagram" />
-                </div>
-                <div className="start__header__logos--pinterest">
+                </a>
+                <a
+                  className="start__header__logos--pinterest"
+                  href="https://www.pinterest.ca/wolfcircus/"
+                >
                   <img id="icon" src={this.state.pinterest} alt="pinterest" />
-                </div>
+                </a>
               </div>
               <a href="/" className="start__header__title">
                 <img src={this.state.effortless} alt="icon" />

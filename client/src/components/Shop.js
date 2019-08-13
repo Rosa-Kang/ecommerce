@@ -3,6 +3,7 @@ import Header from "./HeaderVer2";
 import EaringContainer from "../containers/earingContainer";
 import NecklaceContainer from "../containers/necklaceContainer";
 import RingContainer from "../containers/ringContainer";
+import Footer from "../components/Footer";
 
 export default class Shop extends Component {
   render() {
@@ -48,6 +49,7 @@ export default class Shop extends Component {
           </a>
         </div>
         <RingContainer />
+        <Footer />
       </div>
     );
   }
